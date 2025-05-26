@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>StartupX - Accelerate Your Startup</title>
+
+  <!-- Bootstrap CSS + Icons + Fonts -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #f8f9fa, #eef1f5);
+    }
+    .navbar {
+      background-color: #4f46e5 !important;
+    }
+    .nav-link {
+      color: white !important;
+    }
+    .nav-link:hover, .nav-link.active {
+      color: #c7d2fe !important;
+    }
+    .hero-section {
+      background: linear-gradient(to right, #4f46e5, #6d28d9);
+      color: white;
+      text-align: center;
+      padding: 6rem 2rem 4rem;
+    }
+    .hero-section h1 {
+      font-weight: 700;
+      font-size: 3rem;
+    }
+    .hero-section p.lead {
+      font-size: 1.3rem;
+      max-width: 700px;
+      margin: 1rem auto 0;
+    }
+    .btn-primary {
+      background-color: #4f46e5;
+      border: none;
+      border-radius: 10px;
+      padding: 0.75rem 1.8rem;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+    .btn-primary:hover {
+      background-color: #6d28d9;
+    }
+    .feature-card {
+      background: white;
+      border: none;
+      border-radius: 20px;
+      padding: 2rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+    }
+    .feature-card:hover {
+      transform: translateY(-10px);
+    }
+    footer {
+      background-color: #4f46e5;
+      color: white;
+      text-align: center;
+      padding: 1.5rem 1rem;
+      margin-top: 4rem;
+    }
+    /* Pricing Cards */
+    .pricing-card {
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+      padding: 2rem;
+      transition: transform 0.3s ease;
+    }
+    .pricing-card:hover {
+      transform: translateY(-10px);
+    }
+    .pricing-card.border-primary {
+      border: 2px solid #4f46e5;
+    }
+    /* Team */
+    .team-member img {
+      border-radius: 50%;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      margin-bottom: 1rem;
+    }
+    /* FAQ Accordion */
+    .accordion-button {
+      font-weight: 600;
+      color: #4f46e5;
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">StartupX</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav fw-semibold">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="features.html">Features</a></li>
+        <li class="nav-item"><a class="nav-link" href="why-us.html">Why Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero-section mt-5 pt-5">
+  <div class="container">
+    <h1>Accelerate Your Startup</h1>
+    <p class="lead">Empower your team with powerful tools designed to help you grow faster and smarter.</p>
+    <a href="contact.html" class="btn btn-primary btn-lg mt-4">Get Started</a>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="container py-5">
+  <div class="row g-4 text-center">
+    <div class="col-md-4">
+      <div class="feature-card">
+        <i class="bi bi-gear fs-1 text-primary mb-3"></i>
+        <h5 class="fw-bold">Customizable Workflows</h5>
+        <p>Adapt StartupX to your unique business process effortlessly.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="feature-card">
+        <i class="bi bi-shield-check fs-1 text-success mb-3"></i>
+        <h5 class="fw-bold">Enterprise Security</h5>
+        <p>Stay safe with advanced encryption and compliance standards.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="feature-card">
+        <i class="bi bi-speedometer2 fs-1 text-warning mb-3"></i>
+        <h5 class="fw-bold">Performance Insights</h5>
+        <p>Make smart decisions with real-time data and analytics.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5 fw-bold">Choose Your Plan</h2>
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-3">
+        <div class="pricing-card text-center border rounded shadow-sm">
+          <h5 class="fw-bold">Basic</h5>
+          <p class="display-5 fw-bold">$9<span class="fs-6">/mo</span></p>
+          <ul class="list-unstyled mb-4">
+            <li>✔️ Up to 5 projects</li>
+            <li>✔️ Basic support</li>
+            <li>✔️ Analytics dashboard</li>
+          </ul>
+          <button class="btn btn-primary w-100">Get Started</button>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="pricing-card text-center border-primary border rounded shadow-sm">
+          <h5 class="fw-bold">Pro</h5>
+          <p class="display-5 fw-bold">$29<span class="fs-6">/mo</span></p>
+          <ul class="list-unstyled mb-4">
+            <li>✔️ Unlimited projects</li>
+            <li>✔️ Priority support</li>
+            <li>✔️ Advanced analytics</li>
+          </ul>
+          <button class="btn btn-primary w-100">Try Pro</button>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="pricing-card text-center border rounded shadow-sm">
+          <h5 class="fw-bold">Enterprise</h5>
+          <p class="display-5 fw-bold">Custom</p>
+          <ul class="list-unstyled mb-4">
+            <li>✔️ Dedicated account manager</li>
+            <li>✔️ Custom integrations</li>
+            <li>✔️ On-site training</li>
+          </ul>
+          <button class="btn btn-outline-primary w-100">Contact Us</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MEET THE TEAM -->
+<section class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center mb-5 fw-bold">Meet The Team</h2>
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-3 text-center team-member">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Jane Doe" width="150" height="150" />
+        <h5>Jane Doe</h5>
+        <p class="text-muted">CEO & Founder</p>
+      </div>
+      <div class="col-md-3 text-center team-member">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John Smith" width="150" height="150" />
+        <h5>John Smith</h5>
+        <p class="text-muted">CTO</p>
+      </div>
+      <div class="col-md-3 text-center team-member">
+        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Sara Lee" width="150" height="150" />
+        <h5>Sara Lee</h5>
+        <p class="text-muted">Head of Marketing</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="container py-5">
+  <h2 class="text-center mb-4 fw-bold">Frequently Asked Questions</h2>
+  <div class="accordion" id="faqAccordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          What is StartupX?
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          StartupX is a platform designed to help startups grow with powerful tools and insights.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          How does the free trial work?
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          You get full access to all features for 14 days with no credit card required.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Can I upgrade my plan later?
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Yes! You can upgrade or downgrade your subscription anytime directly from your dashboard.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <p class="mb-0">&copy; 2025 StartupX. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
